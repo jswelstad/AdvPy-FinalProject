@@ -1,5 +1,5 @@
-def main():
+def main() -> None:
     assert(1 == 1);
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
