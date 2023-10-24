@@ -1,1 +1,5 @@
-assert(1 == 1);
+def main():
+    assert(1 == 1);
+
+if __name__ == "main":
+    main()

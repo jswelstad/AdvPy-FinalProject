@@ -9,16 +9,16 @@ all: style-check type-check run-test clean
 
 .PHONY: type-check
 type-check:
-	$(TYPE_CHECK) .
+	$(TYPE_CHECK) main.py
 
 .PHONY: style-check
 style-check:
-	$(STYLE_CHECK) .
+	$(STYLE_CHECK) main.py
 
 # discover and run all tests
 .PHONY: run-test
 run-test:
-	$(TEST) $(TEST_ARGS) .
+	$(TEST) $(TEST_ARGS) main.py
 
 .PHONY: clean
 clean:
